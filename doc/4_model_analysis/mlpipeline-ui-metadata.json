@@ -1,0 +1,1 @@
+{"outputs": [{"type": "table", "storage": "gcs", "format": "csv", "header": ["pipeline_version", "data_version", "model_version", "rmse", "eval_data_version"], "source": "gs://bike-sharing-pipeline-metadata/v0_1/run/200909_154702/model_analysis/200909_163139/perf_models_today.csv"}]}

@@ -1,0 +1,75 @@
+
+<html>
+  <head>
+    <title>Slicing Metrics</title>
+    <!-- Load RequireJS, used by the IPywidgets for dependency management -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"
+            integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA="
+            crossorigin="anonymous">
+    </script>
+    <!-- Load IPywidgets bundle for embedding. -->
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^*/dist/embed-amd.js"
+            crossorigin="anonymous">
+    </script>
+    
+    <!-- Load vulcanized tfma code from prebuilt js file. -->
+    <script src="https://raw.githubusercontent.com/tensorflow/model-analysis/v0.22.0/tensorflow_model_analysis/static/vulcanized_tfma.js">
+    </script> 
+    <!-- Load IPywidgets bundle for embedding. -->
+    <script>
+      require.config({
+        paths: {
+          "tfma_widget_js": "https://raw.githubusercontent.com/tensorflow/model-analysis/v0.22.0/tensorflow_model_analysis/static/index", 
+        } 
+      });
+    </script>
+    <!-- The state of all the widget models on the page -->
+    <script type="application/vnd.jupyter.widget-state+json">
+      {"version_major": 2, "version_minor": 0, "state": {"682dd31aedf24128a122ae4995297ab8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "c887b6e30e6b45be9c753b13fbfc1057": {"model_name": "SlicingMetricsModel", "model_module": "tensorflow_model_analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"weightedExamplesColumn": "post_export_metrics/example_count"}, "data": [{"slice": "Overall", "metrics": {"": {"": {"rmse": {"doubleValue": 339.1432800292969}, "average_loss": {"doubleValue": 115018.15625}, "label/mean": {"doubleValue": 260.27410888671875}, "post_export_metrics/example_count": {"doubleValue": 2178.0}, "mae": {"doubleValue": 247.89231872558594}, "prediction/mean": {"doubleValue": 0.11727461218833923}}}}}], "js_events": [], "layout": "IPY_MODEL_682dd31aedf24128a122ae4995297ab8"}}, "ceb64cbfed834b848206914cb76edd3e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "a1dba1891d974aefb83cd24f29cfa24b": {"model_name": "SlicingMetricsModel", "model_module": "tensorflow_model_analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"weightedExamplesColumn": "post_export_metrics/example_count"}, "data": [{"slice": "season:fall", "metrics": {"": {"": {"average_loss": {"doubleValue": 139115.953125}, "label/mean": {"doubleValue": 289.0715026855469}, "post_export_metrics/example_count": {"doubleValue": 811.0}, "mae": {"doubleValue": 288.7800598144531}, "prediction/mean": {"doubleValue": 0.2914578914642334}, "rmse": {"doubleValue": 372.9825134277344}}}}}, {"slice": "season:winter", "metrics": {"": {"": {"mae": {"doubleValue": 234.42160034179688}, "prediction/mean": {"doubleValue": 0.013936903327703476}, "rmse": {"doubleValue": 317.3667907714844}, "average_loss": {"doubleValue": 100721.671875}, "label/mean": {"doubleValue": 243.18946838378906}, "post_export_metrics/example_count": {"doubleValue": 1367.0}}}}}], "js_events": [], "layout": "IPY_MODEL_ceb64cbfed834b848206914cb76edd3e"}}, "54ec821f3e3447fd98b5ab3a92f78412": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "53ad9247624547e9957346ae90b7617f": {"model_name": "SlicingMetricsModel", "model_module": "tensorflow_model_analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"weightedExamplesColumn": "post_export_metrics/example_count"}, "data": [{"slice": "weather:clear", "metrics": {"": {"": {"prediction/mean": {"doubleValue": 0.13379088044166565}, "rmse": {"doubleValue": 360.08135986328125}, "average_loss": {"doubleValue": 129658.578125}, "label/mean": {"doubleValue": 279.9909973144531}, "post_export_metrics/example_count": {"doubleValue": 1334.0}, "mae": {"doubleValue": 268.75946044921875}}}}}, {"slice": "weather:light rain", "metrics": {"": {"": {"post_export_metrics/example_count": {"doubleValue": 152.0}, "mae": {"doubleValue": 194.1734161376953}, "prediction/mean": {"doubleValue": 0.10290505737066269}, "rmse": {"doubleValue": 262.9820556640625}, "average_loss": {"doubleValue": 69159.5546875}, "label/mean": {"doubleValue": 194.2763214111328}}}}}, {"slice": "weather:cloudy", "metrics": {"": {"": {"average_loss": {"doubleValue": 96868.2109375}, "label/mean": {"doubleValue": 236.76156616210938}, "post_export_metrics/example_count": {"doubleValue": 692.0}, "mae": {"doubleValue": 236.67295837402344}, "prediction/mean": {"doubleValue": 0.08859177678823471}, "rmse": {"doubleValue": 311.236572265625}}}}}], "js_events": [], "layout": "IPY_MODEL_54ec821f3e3447fd98b5ab3a92f78412"}}, "d0cff62ae7de4238923ccdb1f4180c2d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "80c262736b184a04a4fdfc375b0ef4f2": {"model_name": "TimeSeriesModel", "model_module": "tensorflow_model-analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"isModelCentric": true}, "data": [{"metrics": {"": {"": {"post_export_metrics/example_count": {"doubleValue": 2178.0}, "mae": {"doubleValue": 247.89231872558594}, "prediction/mean": {"doubleValue": 0.11727461218833923}, "rmse": {"doubleValue": 339.1432800292969}, "average_loss": {"doubleValue": 115018.15625}, "label/mean": {"doubleValue": 260.27410888671875}}}}, "config": {"modelIdentifier": "1599669181", "dataIdentifier": "<user provided PCollection>"}}], "layout": "IPY_MODEL_d0cff62ae7de4238923ccdb1f4180c2d"}}, "f4ee5859ce5d4b9992ffe70f2eb3ce39": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "8921fc52dd994f2db0186259f6b6ae97": {"model_name": "TimeSeriesModel", "model_module": "tensorflow_model-analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"isModelCentric": true}, "data": [{"metrics": {"": {"": {"post_export_metrics/example_count": {"doubleValue": 2178.0}, "mae": {"doubleValue": 247.89231872558594}, "prediction/mean": {"doubleValue": 0.11727461218833923}, "rmse": {"doubleValue": 339.1432800292969}, "average_loss": {"doubleValue": 115018.15625}, "label/mean": {"doubleValue": 260.27410888671875}}}}, "config": {"modelIdentifier": "eval_saved_model", "dataIdentifier": "test*"}}], "layout": "IPY_MODEL_f4ee5859ce5d4b9992ffe70f2eb3ce39"}}, "7dc0897ebaf9403691f39f4714407905": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "3bd298137c92462d9c6867b6ea07e5fc": {"model_name": "SlicingMetricsModel", "model_module": "tensorflow_model_analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"weightedExamplesColumn": "post_export_metrics/example_count"}, "data": [{"slice": "Overall", "metrics": {"": {"": {"rmse": {"doubleValue": 339.1432800292969}, "average_loss": {"doubleValue": 115018.15625}, "label/mean": {"doubleValue": 260.27410888671875}, "post_export_metrics/example_count": {"doubleValue": 2178.0}, "mae": {"doubleValue": 247.89231872558594}, "prediction/mean": {"doubleValue": 0.11727461218833923}}}}}], "js_events": [], "layout": "IPY_MODEL_7dc0897ebaf9403691f39f4714407905"}}, "a8c18d7347c9421eb0d444d7496ce024": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "1f63502810ee4d6286b88642387d4e5d": {"model_name": "SlicingMetricsModel", "model_module": "tensorflow_model_analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"weightedExamplesColumn": "post_export_metrics/example_count"}, "data": [{"slice": "season:fall", "metrics": {"": {"": {"average_loss": {"doubleValue": 139115.953125}, "label/mean": {"doubleValue": 289.0715026855469}, "post_export_metrics/example_count": {"doubleValue": 811.0}, "mae": {"doubleValue": 288.7800598144531}, "prediction/mean": {"doubleValue": 0.2914578914642334}, "rmse": {"doubleValue": 372.9825134277344}}}}}, {"slice": "season:winter", "metrics": {"": {"": {"mae": {"doubleValue": 234.42160034179688}, "prediction/mean": {"doubleValue": 0.013936903327703476}, "rmse": {"doubleValue": 317.3667907714844}, "average_loss": {"doubleValue": 100721.671875}, "label/mean": {"doubleValue": 243.18946838378906}, "post_export_metrics/example_count": {"doubleValue": 1367.0}}}}}], "js_events": [], "layout": "IPY_MODEL_a8c18d7347c9421eb0d444d7496ce024"}}, "b4c143040fc9468195048a12430c043e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "28840362c0284d9489538ee198f9d6ca": {"model_name": "SlicingMetricsModel", "model_module": "tensorflow_model_analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"weightedExamplesColumn": "post_export_metrics/example_count"}, "data": [{"slice": "weather:clear", "metrics": {"": {"": {"prediction/mean": {"doubleValue": 0.13379088044166565}, "rmse": {"doubleValue": 360.08135986328125}, "average_loss": {"doubleValue": 129658.578125}, "label/mean": {"doubleValue": 279.9909973144531}, "post_export_metrics/example_count": {"doubleValue": 1334.0}, "mae": {"doubleValue": 268.75946044921875}}}}}, {"slice": "weather:light rain", "metrics": {"": {"": {"post_export_metrics/example_count": {"doubleValue": 152.0}, "mae": {"doubleValue": 194.1734161376953}, "prediction/mean": {"doubleValue": 0.10290505737066269}, "rmse": {"doubleValue": 262.9820556640625}, "average_loss": {"doubleValue": 69159.5546875}, "label/mean": {"doubleValue": 194.2763214111328}}}}}, {"slice": "weather:cloudy", "metrics": {"": {"": {"average_loss": {"doubleValue": 96868.2109375}, "label/mean": {"doubleValue": 236.76156616210938}, "post_export_metrics/example_count": {"doubleValue": 692.0}, "mae": {"doubleValue": 236.67295837402344}, "prediction/mean": {"doubleValue": 0.08859177678823471}, "rmse": {"doubleValue": 311.236572265625}}}}}], "js_events": [], "layout": "IPY_MODEL_b4c143040fc9468195048a12430c043e"}}, "0ee8b9c94b7f4795a3e61141ce9a6dad": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "9111b72bc47c4338908c8d76423f1557": {"model_name": "SlicingMetricsModel", "model_module": "tensorflow_model_analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"weightedExamplesColumn": "post_export_metrics/example_count"}, "data": [{"slice": "daytype:weekend", "metrics": {"": {"": {"rmse": {"doubleValue": 319.9737243652344}, "average_loss": {"doubleValue": 102383.1796875}, "label/mean": {"doubleValue": 247.57386779785156}, "post_export_metrics/example_count": {"doubleValue": 643.0}, "mae": {"doubleValue": 247.49557495117188}, "prediction/mean": {"doubleValue": 0.0783107653260231}}}}}, {"slice": "daytype:workingday", "metrics": {"": {"": {"post_export_metrics/example_count": {"doubleValue": 1463.0}, "mae": {"doubleValue": 256.2756652832031}, "prediction/mean": {"doubleValue": 0.13591940701007843}, "rmse": {"doubleValue": 348.56207275390625}, "average_loss": {"doubleValue": 121495.515625}, "label/mean": {"doubleValue": 266.51129150390625}}}}}, {"slice": "daytype:holiday", "metrics": {"": {"": {"label/mean": {"doubleValue": 246.9583282470703}, "post_export_metrics/example_count": {"doubleValue": 72.0}, "mae": {"doubleValue": 246.87196350097656}, "prediction/mean": {"doubleValue": 0.08639175444841385}, "rmse": {"doubleValue": 310.2247009277344}, "average_loss": {"doubleValue": 96239.359375}}}}}], "js_events": [], "layout": "IPY_MODEL_0ee8b9c94b7f4795a3e61141ce9a6dad"}}, "9ef02a9bed204da3a0a7b0f02da9678b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "8207ab9bd8c44add97a8e33ef6c7378a": {"model_name": "TimeSeriesModel", "model_module": "tensorflow_model-analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"isModelCentric": true}, "data": [{"metrics": {"": {"": {"post_export_metrics/example_count": {"doubleValue": 2178.0}, "mae": {"doubleValue": 247.89231872558594}, "prediction/mean": {"doubleValue": 0.11727461218833923}, "rmse": {"doubleValue": 339.1432800292969}, "average_loss": {"doubleValue": 115018.15625}, "label/mean": {"doubleValue": 260.27410888671875}}}}, "config": {"modelIdentifier": "1599669181", "dataIdentifier": "<user provided PCollection>"}}], "layout": "IPY_MODEL_9ef02a9bed204da3a0a7b0f02da9678b"}}, "6c8bcd8167744a44a1dbbb69eb3c71ce": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {}}, "c83f62817b9e4d2b9e61800fc36dee38": {"model_name": "TimeSeriesModel", "model_module": "tensorflow_model-analysis", "model_module_version": "0.22.0", "state": {"_dom_classes": [], "config": {"isModelCentric": true}, "data": [{"metrics": {"": {"": {"post_export_metrics/example_count": {"doubleValue": 2178.0}, "mae": {"doubleValue": 247.89231872558594}, "prediction/mean": {"doubleValue": 0.11727461218833923}, "rmse": {"doubleValue": 339.1432800292969}, "average_loss": {"doubleValue": 115018.15625}, "label/mean": {"doubleValue": 260.27410888671875}}}}, "config": {"modelIdentifier": "eval_saved_model", "dataIdentifier": "test*"}}], "layout": "IPY_MODEL_6c8bcd8167744a44a1dbbb69eb3c71ce"}}}}
+    </script>
+  </head>
+  <body>
+    <h1>Slicing Metrics</h1>
+    
+    <div id="slicing-metrics-widget-0">
+      <script type="application/vnd.jupyter.widget-view+json">
+        {"version_major": 2, "version_minor": 0, "model_id": "3bd298137c92462d9c6867b6ea07e5fc"}
+      </script>
+    </div>
+
+    <div id="slicing-metrics-widget-1">
+      <script type="application/vnd.jupyter.widget-view+json">
+        {"version_major": 2, "version_minor": 0, "model_id": "1f63502810ee4d6286b88642387d4e5d"}
+      </script>
+    </div>
+
+    <div id="slicing-metrics-widget-2">
+      <script type="application/vnd.jupyter.widget-view+json">
+        {"version_major": 2, "version_minor": 0, "model_id": "28840362c0284d9489538ee198f9d6ca"}
+      </script>
+    </div>
+
+    <div id="slicing-metrics-widget-3">
+      <script type="application/vnd.jupyter.widget-view+json">
+        {"version_major": 2, "version_minor": 0, "model_id": "9111b72bc47c4338908c8d76423f1557"}
+      </script>
+    </div>
+
+    <h1>Comparison with Past Trial Results</h1>
+    
+    <div id="ts-metrics-widget-0">
+      <script type="application/vnd.jupyter.widget-view+json">
+        {"version_major": 2, "version_minor": 0, "model_id": "8207ab9bd8c44add97a8e33ef6c7378a"}
+      </script>
+    </div>
+
+    <h1>How Does It Look Today</h1>
+    
+    <div id="ts-today-metrics-widget-0">
+      <script type="application/vnd.jupyter.widget-view+json">
+        {"version_major": 2, "version_minor": 0, "model_id": "c83f62817b9e4d2b9e61800fc36dee38"}
+      </script>
+    </div>
+
+  </body>
+</html>

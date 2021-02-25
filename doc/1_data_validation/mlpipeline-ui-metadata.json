@@ -1,0 +1,1 @@
+{"outputs": [{"type": "web-app", "storage": "gcs", "source": "gs://bike-sharing-pipeline-metadata/v0_1/run/200911_131245/data_validation/index.html"}]}

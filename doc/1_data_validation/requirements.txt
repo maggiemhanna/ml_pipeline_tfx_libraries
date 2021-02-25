@@ -1,0 +1,5 @@
+tensorflow==2.2.0
+tensorflow_data_validation==0.22.0
+apache_beam[gcp]==2.20.0
+pyarrow==0.16.0
+tfx-bsl==0.22.0

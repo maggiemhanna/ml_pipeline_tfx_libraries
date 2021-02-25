@@ -1,0 +1,6 @@
+tensorflow==2.2.0
+tensorflow_model_analysis==0.22.0
+apache_beam[gcp]==2.20.0
+pyarrow==0.16.0
+tfx-bsl==0.22.0
+google-cloud-storage==1.28.0
