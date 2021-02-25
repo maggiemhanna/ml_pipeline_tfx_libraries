@@ -22,7 +22,7 @@ The train, val and test splits of the prepared data can be found at `doc/bike-sh
 
 The training ML pipeline has the following 5 components and is mainly orchestrated with Kubeflow Pipelines and run on Google Cloud AI Platform Infrastructure.
 
-![Web App](img/pipeline_components.png)
+![Web App](pipeline_components.png)
 
 We choose a functional decomposition of pipeline components to represent the main ML tasks.  
 Each component is built as a docker container which ensures its isolation, autonomy and maintainability.
